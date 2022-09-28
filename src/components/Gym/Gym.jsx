@@ -11,7 +11,7 @@ const Gym = () => {
     }, [])
     return (
         <main className='grid grid-cols-12  gap-8 bg-orange-50'>
-            <section className="gymItems_area col-span-12 lg:col-span-9 px-8">
+            <section className="gymItems_area col-span-12 lg:col-span-9 md:px-8">
                 <GymItems loadData={loadData} />
             </section>
             <section className='timeZone_area col-span-12 lg:col-span-3 bg-white px-8'>
