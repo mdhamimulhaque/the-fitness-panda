@@ -4,7 +4,7 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            <div className="navbar bg-rose-100">
+            <div className="navbar bg-orange-100">
                 <div className="flex-1">
                     <a href='/The Fitness Parade' className="btn btn-ghost normal-case text-xl">The Fitness Parade</a>
                 </div>
