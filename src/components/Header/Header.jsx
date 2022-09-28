@@ -5,7 +5,7 @@ import logo from '../../images/logo.png';
 const Header = () => {
     return (
         <header>
-            <div className="navbar bg-orange-100">
+            <div className="navbar bg-orange-200">
                 <div className="flex-1">
                     <img className='w-12' src={logo} alt="" />
                     <a href='/The Fitness Parade' className="btn btn-ghost normal-case text-2xl">The Fitness Parade</a>
