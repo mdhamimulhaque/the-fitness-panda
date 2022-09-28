@@ -1,9 +1,12 @@
 import './App.css';
+import Gym from './components/Gym/Gym';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <h2>setup done</h2>
+      <Header />
+      <Gym />
     </div>
   );
 }
