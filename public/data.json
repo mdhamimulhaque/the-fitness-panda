@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "63347780ace87bba6cd8e003",
+        "picture": "https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?w=1380&t=st=1664383626~exp=1664384226~hmac=458c0982a5ed6560632183864fc0c1149f619cb9f88409ec32b82b73a0437c30",
+        "age": 25,
+        "title": "Dumbbelling",
+        "desc": "Avoids pleasure itself, because it is plea sure but because those who do not know how to pursue pleasure rationally",
+        "time": 10
+    },
+    {
+        "_id": "633477802e4380b84d0b8114",
+        "picture": "https://img.freepik.com/free-photo/cycling-equipment-healthy-fit-fitness_1139-686.jpg?w=1380&t=st=1664383858~exp=1664384458~hmac=f8ea419a634e715a98376e20784f5447463784c982d7e017633ac5536617e100",
+        "age": 22,
+        "title": "Cycling GYM",
+        "desc": "Avoids pleasure itself, because it is plea sure but because those who do not know how to pursue pleasure rationally",
+        "time": 30
+    },
+    {
+        "_id": "6334778003981b1d3adf2dd7",
+        "picture": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "age": 33,
+        "title": "Grid Training",
+        "desc": "Avoids pleasure itself, because it is plea sure but because those who do not know how to pursue pleasure rationally",
+        "time": 10
+    },
+    {
+        "_id": "63347780b0f9d9abe5c58084",
+        "picture": "https://img.freepik.com/free-photo/beautiful-african-woman-smiling-enjoying-massage-spa-resort_176420-12930.jpg?w=1380&t=st=1664384083~exp=1664384683~hmac=2f8c3d85f2194cdaaa514042d38fb41d8ca3c2eaa2e45af5660ec407d0eed764",
+        "age": 30,
+        "title": "Beauty & Spa",
+        "desc": "Avoids pleasure itself, because it is plea sure but because those who do not know how to pursue pleasure rationally",
+        "time": 30
+    },
+    {
+        "_id": "63347780e71a879edac872ed",
+        "picture": "https://img.freepik.com/free-photo/fit-young-woman-lifting-barbells-looking-focused-working-out-gym_155003-33428.jpg?w=1380&t=st=1664384170~exp=1664384770~hmac=992ec1e3edee6250165c96621b84ae6318b525118cbc1d21d5afc4f6c789e8a9",
+        "age": 24,
+        "title": "Crosfit Tools",
+        "desc": "Avoids pleasure itself, because it is plea sure but because those who do not know how to pursue pleasure rationally",
+        "time": 10
+    },
+    {
+        "_id": "63347780e71a879edac872ed",
+        "picture": "https://img.freepik.com/free-photo/focused-achieving-my-goals-strong-woman-her-30s-doing-push-ups-with-dumbbells-her-high-intensity-interval-training-home_662251-1330.jpg?w=1380&t=st=1664384475~exp=1664385075~hmac=6c5d0eec62e6393ab51d8b20cbe370aef31f9975c033f8f02436b44f7a612847",
+        "age": 25,
+        "title": "Push-ups",
+        "desc": "Avoids pleasure itself, because it is plea sure but because those who do not know how to pursue pleasure rationally",
+        "time": 5
+    }
+]
