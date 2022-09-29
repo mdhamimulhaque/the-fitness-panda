@@ -10,6 +10,12 @@ const Header = () => {
                     <img className='w-12' src={logo} alt="" />
                     <a href='/The Fitness Parade' className="btn btn-ghost normal-case text-2xl">The Fitness Parade</a>
                 </div>
+                <nav className='mr-5'>
+                    <a className='mx-5 font-medium hover:text-white ' href="/home">Home</a>
+                    <a className='mx-5 font-medium hover:text-white ' href="/about">About</a>
+                    <a className='mx-5 font-medium hover:text-white ' href="/service">Service</a>
+                    <a className='mx-5 font-medium hover:text-white ' href="/blog">Blog</a>
+                </nav>
                 <div className="flex-none">
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">
