@@ -1,10 +1,12 @@
 import React from 'react';
 import userImg from '../../images/Md Hamimul Haque.jpg';
+import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
+import SelectBreakTime from '../SelectBreakTime/SelectBreakTime';
 
 const TimeZone = () => {
     const breaksTime = [10, 20, 30, 40, 50]
     return (
-        <aside className="user_Box">
+        <aside className="user_container">
             <section className="user_img my-8 text-center">
                 <div className="avatar">
                     <div className="w-24 rounded-full ring  ring-offset-base-100 ring-offset-2">
@@ -18,41 +20,17 @@ const TimeZone = () => {
                 </div>
             </section>
 
-            <section className='break_time'>
-                <h2 className='text-3xl font-semibold text-orange-400'>Add A Break</h2>
-                <div
-                    className="break_time_display bg-orange-200 p-4 rounded my-4 flex justify-between"
-                >
-                    {
-                        breaksTime.map(breakTime => {
-                            return (
-                                <div
-                                    className="time_selector rounded h-10 w-10 bg-white leading-10 text-center transition ease-in-out delay-150 cursor-pointer hover:bg-orange-400 hover:text-white">
-                                    {breakTime}m
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            </section>
+            <div className="break_exercise_counter_area">
+                <section className='select_break_time_container'>
+                    <h2 className='text-3xl font-semibold text-orange-400'>Add A Break</h2>
+                    <SelectBreakTime breaksTime={breaksTime} />
+                </section>
 
-            <section className='exercise_deal mt-8'>
-                <h2 className='text-3xl font-semibold text-orange-400'>Exercise Details</h2>
-                <div className="Exercise_time bg-orange-200 p-4 rounded my-4 flex justify-between">
-                    <h2 className='font-semibold'>Exercise time</h2>
-                    <h2 className='font-semibold'>2000m</h2>
-                </div>
-
-                <div className="Exercise_time bg-orange-200 p-4 rounded my-4 flex justify-between">
-                    <h2 className='font-semibold'>Break time</h2>
-                    <h2 className='font-semibold'>20m</h2>
-                </div>
-
-                <button
-                    className="btn w-full bg-orange-400 border border-orange-400 mt-3">
-                    Activity Completed
-                </button>
-            </section>
+                <section className='exercise_details_area mt-8'>
+                    <h2 className='text-3xl font-semibold text-orange-400'>Exercise Details</h2>
+                    <ExerciseDetails />
+                </section>
+            </div>
         </aside>
     );
 };
