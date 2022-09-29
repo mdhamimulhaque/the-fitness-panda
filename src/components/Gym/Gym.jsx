@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import GymItems from '../GymItems/GymItems';
 import TimeZone from '../TimeZone/TimeZone';
-import { selectTotalTimeCalculator } from '../../utilities/Calculator'
+import { selectTotalTimeCalculator } from '../../utilities/Calculator';
+
 
 const Gym = () => {
     const [loadData, setLoadData] = useState([])

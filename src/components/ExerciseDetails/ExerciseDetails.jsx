@@ -1,6 +1,16 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 
 const ExerciseDetails = ({ selectPackageTime, showBreakTime }) => {
+    const handleCompleted = () => {
+        Swal.fire({
+            position: 'center-center',
+            icon: 'success',
+            title: 'Your Activity has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
     return (
         <div>
             <div className="exercise_time_container bg-orange-200 p-4 rounded my-4 flex justify-between">
@@ -14,8 +24,11 @@ const ExerciseDetails = ({ selectPackageTime, showBreakTime }) => {
             </div>
 
             <button
-                className="btn w-full bg-orange-400 border border-orange-400 mt-3">
+                className="btn w-full bg-orange-400 border border-orange-400 mt-3"
+                onClick={handleCompleted}
+            >
                 Activity Completed
+
             </button>
         </div>
     );
