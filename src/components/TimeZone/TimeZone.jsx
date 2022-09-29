@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import userImg from '../../images/mdhamimulhaque.jpg';
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import SelectBreakTime from '../SelectBreakTime/SelectBreakTime';
@@ -9,8 +9,16 @@ const TimeZone = ({ selectPackageTime }) => {
     const [showBreakTime, setShowBreakTime] = useState('00')
 
     const handleBreakTime = (time) => {
-        setShowBreakTime(time)
+        setShowBreakTime(time);
+        localStorage.setItem('breakTime', JSON.stringify(time));
     }
+
+    useEffect(() => {
+        const getData = localStorage.getItem('breakTime');
+        setShowBreakTime(getData)
+
+    }, [showBreakTime])
+
 
     return (
         <aside className="user_container">
