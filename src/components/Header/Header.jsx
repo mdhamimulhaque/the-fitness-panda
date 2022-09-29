@@ -8,9 +8,9 @@ const Header = () => {
             <div className="navbar bg-orange-200">
                 <div className="flex-1">
                     <img className='w-12' src={logo} alt="" />
-                    <a href='/The Fitness Parade' className="btn btn-ghost normal-case text-2xl">The Fitness Parade</a>
+                    <a href='/home' className="btn btn-ghost normal-case text-2xl">The Fitness Parade</a>
                 </div>
-                <nav className='mr-5'>
+                <nav className='mr-5 hidden lg:block'>
                     <a className='mx-5 font-medium hover:text-white ' href="/home">Home</a>
                     <a className='mx-5 font-medium hover:text-white ' href="/about">About</a>
                     <a className='mx-5 font-medium hover:text-white ' href="/service">Service</a>

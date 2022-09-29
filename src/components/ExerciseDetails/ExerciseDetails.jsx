@@ -7,7 +7,7 @@ const ExerciseDetails = ({ selectPackageTime, showBreakTime }) => {
         Swal.fire({
             position: 'center-center',
             icon: 'success',
-            title: 'Your Activity has been saved',
+            title: 'Your Activity has been completed',
             showConfirmButton: false,
             timer: 1500
         })

@@ -7,7 +7,6 @@ const TimeZone = ({ selectPackageTime }) => {
     const breaksTime = [10, 20, 30, 40, 50]
 
     const [showBreakTime, setShowBreakTime] = useState('00');
-    const [isBreakTime, setIsBreakTime] = useState(false)
 
     const handleBreakTime = (time) => {
         setShowBreakTime(time);
@@ -16,7 +15,11 @@ const TimeZone = ({ selectPackageTime }) => {
 
     useEffect(() => {
         const getData = localStorage.getItem('breakTime');
-        setShowBreakTime(getData)
+        if (getData) {
+            setShowBreakTime(getData)
+        } else {
+            setShowBreakTime(showBreakTime)
+        }
 
     }, [showBreakTime])
 
