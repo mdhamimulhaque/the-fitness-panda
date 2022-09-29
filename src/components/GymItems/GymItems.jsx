@@ -1,7 +1,7 @@
 import React from 'react';
 import GymSingleItem from '../GymSingleItem/GymSingleItem';
 
-const GymItems = ({ loadData }) => {
+const GymItems = ({ loadData, handleAddToCard }) => {
     return (
         <div>
             <h2 className='text-3xl px-3 text-orange-400 my-8 font-semibold'>Select Your Exercise List</h2>
@@ -11,6 +11,7 @@ const GymItems = ({ loadData }) => {
                         <GymSingleItem
                             key={cardInfo._id}
                             cardInfo={cardInfo}
+                            handleAddToCard={handleAddToCard}
                         />)
                 }
             </div>
