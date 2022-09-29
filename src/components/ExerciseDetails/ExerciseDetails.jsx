@@ -1,5 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
+import Faq from '../Faq/Faq';
 
 const ExerciseDetails = ({ selectPackageTime, showBreakTime }) => {
     const handleCompleted = () => {
@@ -30,6 +31,7 @@ const ExerciseDetails = ({ selectPackageTime, showBreakTime }) => {
                 Activity Completed
 
             </button>
+            <Faq />
         </div>
     );
 };
