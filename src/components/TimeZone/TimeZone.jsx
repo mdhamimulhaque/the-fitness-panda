@@ -6,7 +6,8 @@ import SelectBreakTime from '../SelectBreakTime/SelectBreakTime';
 const TimeZone = ({ selectPackageTime }) => {
     const breaksTime = [10, 20, 30, 40, 50]
 
-    const [showBreakTime, setShowBreakTime] = useState('00')
+    const [showBreakTime, setShowBreakTime] = useState('00');
+    const [isBreakTime, setIsBreakTime] = useState(false)
 
     const handleBreakTime = (time) => {
         setShowBreakTime(time);

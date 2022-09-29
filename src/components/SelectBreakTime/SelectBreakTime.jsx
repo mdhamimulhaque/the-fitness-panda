@@ -10,7 +10,7 @@ const SelectBreakTime = ({ breaksTime, handleBreakTime }) => {
                             key={index}
                             onClick={() => { handleBreakTime(bkt) }}
                             className="time_selector rounded h-10 w-10 bg-white leading-10 text-center transition ease-in-out delay-150 cursor-pointer hover:bg-orange-400 hover:text-white">
-                            {bkt}m
+                            {bkt}mn
                         </button>
                     )
                 })

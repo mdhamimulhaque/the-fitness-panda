@@ -10,7 +10,7 @@ const GymSingleItem = ({ cardInfo, handleAddToCard }) => {
                     <h2 className="card-title text-orange-400">{title}</h2>
                     <p>{desc}</p>
                     <p>Minimum Age Required: {age}</p>
-                    <p>Time Required : {time}m</p>
+                    <p>Time Required : {time}mn</p>
                     <div className="card-actions justify-end">
                         <button
                             className="btn w-full bg-orange-400 border border-orange-400 mt-3"
