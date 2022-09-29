@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import userImg from '../../images/mdhamimulhaque.jpg';
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import SelectBreakTime from '../SelectBreakTime/SelectBreakTime';
 
 const TimeZone = ({ selectPackageTime }) => {
     const breaksTime = [10, 20, 30, 40, 50]
+
+    const [showBreakTime, setShowBreakTime] = useState('00')
+
+    const handleBreakTime = (time) => {
+        setShowBreakTime(time)
+    }
+
     return (
         <aside className="user_container">
             <section className="user_img my-8 text-center">
@@ -25,6 +32,7 @@ const TimeZone = ({ selectPackageTime }) => {
                     <h2 className='text-3xl font-semibold text-orange-400'>Add A Break</h2>
                     <SelectBreakTime
                         breaksTime={breaksTime}
+                        handleBreakTime={handleBreakTime}
                     />
                 </section>
 
@@ -32,6 +40,7 @@ const TimeZone = ({ selectPackageTime }) => {
                     <h2 className='text-3xl font-semibold text-orange-400'>Exercise Details</h2>
                     <ExerciseDetails
                         selectPackageTime={selectPackageTime}
+                        showBreakTime={showBreakTime}
                     />
                 </section>
             </div>
